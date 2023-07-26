@@ -6,8 +6,52 @@ export const CertificationContainer = styled.div`
   justify-content: space-between;
   gap: 1em;
   background: #f5f5f5;
-  height: 100%;
-  width: calc(100vw - 30%);
+  width: calc(100vw - 20%);
+  max-width: 816px;
   margin: auto;
-  padding: 2em;
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+    flex-direction: column;
+  }
+`;
+
+export const CertificationItem = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
+`;
+
+export const TitleWrapper = styled.div`
+  font-family: "Raleway";
+`;
+
+export const Title = styled.div`
+  font-weight: bold;
+`;
+
+export const TitlePlace = styled.div``;
+
+export const CertificationWrapper = styled.div`
+  text-align: right;
+  font-family: "Open Sans";
+`;
+
+export const TitleDate = styled.div`
+  @media screen and (max-width: 820px) {
+    display: flex;
+  }
+`;
+
+export const TitleCertification = styled.a`
+  color: #3a8def;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+
+  @media screen and (max-width: 820px) {
+    display: flex;
+  }
 `;

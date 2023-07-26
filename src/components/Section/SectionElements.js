@@ -6,7 +6,6 @@ export const SectionContainer = styled.div`
   color: black;
   text-transform: uppercase;
   font-family: "Raleway";
-  margin-top: 1em;
 `;
 
 export const SectionItems = styled.div`

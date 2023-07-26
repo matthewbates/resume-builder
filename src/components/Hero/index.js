@@ -1,55 +1,35 @@
-import { Fragment } from "react";
-
 import {
   HeroContainer,
   HeroLeftItemsWrapper,
-  HeroTitleWrapper,
   HeroImg,
   HeroTitle,
   HeroSubTitle,
   HeroRightItemsWrapper,
   HeroTextWrapper,
-  HeroText,
-  HeroAWrapper,
-  HeroA,
+  HeroEmail,
 } from "./HeroElements";
 
-import { links } from "./data";
+import Links from "../Links";
 
 export default function Hero() {
   return (
     <HeroContainer>
       <HeroLeftItemsWrapper>
         <HeroImg src={require("../../assets/avatar.png")} />
-        <HeroTitleWrapper>
+        <div>
           <HeroTitle>Matthew Bates</HeroTitle>
           <HeroSubTitle>Applications Developer</HeroSubTitle>
-        </HeroTitleWrapper>
+        </div>
       </HeroLeftItemsWrapper>
       <HeroRightItemsWrapper>
         <HeroTextWrapper>
-          <HeroText>(713) 504-4436</HeroText>
-          <HeroA isEmail="true" href="mailto:mhcb@tutanota.com">
+          <p>(713) 504-4436</p>
+          <HeroEmail isEmail="true" href="mailto:mhcb@tutanota.com">
             mhcb@tutanota.com
-          </HeroA>
-          <HeroText>📍Denver, CO</HeroText>
+          </HeroEmail>
+          <p>📍Denver, CO</p>
         </HeroTextWrapper>
-        <HeroAWrapper>
-          {links.map(({ id, name, link, target, rel }, index) => (
-            <Fragment key={id}>
-              <HeroA
-                key={id}
-                isEmail="false"
-                href={link}
-                target={target}
-                rel={rel}
-              >
-                {name}
-              </HeroA>
-              {index !== links.length - 1 && "|"}
-            </Fragment>
-          ))}
-        </HeroAWrapper>
+        <Links />
       </HeroRightItemsWrapper>
     </HeroContainer>
   );

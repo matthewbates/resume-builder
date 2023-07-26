@@ -1,16 +1,21 @@
 import styled from "styled-components";
 
+import { CONSTANTS } from "../utils/constants";
+
 export const HeroContainer = styled.div`
   display: flex;
   margin: auto;
-  background: #f5f5f5;
+  background: ${CONSTANTS.colors.resumeWhite};
   height: 100%;
-  width: calc(100vw - 30%);
+  width: calc(100vw - 20%);
+  max-width: 816px;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
 
   @media screen and (max-width: 820px) {
+    /* flex-direction: column;
+    gap: 1em; */
+    width: 100%;
     flex-direction: column;
   }
 `;
@@ -19,9 +24,9 @@ export const HeroLeftItemsWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 1em;
+  padding: 1em;
+  line-height: 0.5em;
 `;
-
-export const HeroTitleWrapper = styled.div``;
 
 export const HeroImg = styled.img`
   display: flex;
@@ -42,28 +47,20 @@ export const HeroSubTitle = styled.h5`
 export const HeroRightItemsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  color: #363636;
+  line-height: 0.5em;
   font-family: "Open Sans";
+  padding: 1em;
 `;
 
 export const HeroTextWrapper = styled.div`
   text-align: right;
-`;
 
-export const HeroText = styled.p``;
-
-export const HeroAWrapper = styled.div`
-  display: flex;
-  gap: 0.25em;
-`;
-
-export const HeroA = styled.a`
-  text-decoration: ${({ isEmail }) =>
-    isEmail === "true" ? "underline" : "none"};
-  color: ${({ isEmail }) => (isEmail === "true" ? "#363636" : "#05386b")};
-  font-family: ${({ isEmail }) => isEmail === "false" && "Space Mono"};
-
-  &:hover {
-    font-weight: ${({ isEmail }) => isEmail === "false" && "bold"};
+  @media screen and (max-width: 820px) {
+    text-align: center;
   }
+`;
+
+export const HeroEmail = styled.a`
+  text-decoration: underline;
+  color: #363636;
 `;
