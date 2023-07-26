@@ -3,7 +3,7 @@ export const skills = {
     javascript: {
       id: 1,
       name: "JavaScript (ES6+)",
-      value: 85,
+      value: 90,
     },
     ruby: {
       id: 2,
@@ -25,12 +25,12 @@ export const skills = {
     git: {
       id: 5,
       name: "Git",
-      value: 85,
+      value: 90,
     },
     react: {
       id: 6,
       name: "React JS",
-      value: 90,
+      value: 100,
     },
     restApi: {
       id: 7,
@@ -40,17 +40,17 @@ export const skills = {
     nodeJs: {
       id: 8,
       name: "Node.js",
-      value: 85,
+      value: 70,
     },
     express: {
       id: 9,
       name: "Express.js",
-      value: 80,
+      value: 70,
     },
     mongoose: {
       id: 10,
       name: "Mongoose",
-      value: 70,
+      value: 60,
     },
     jest: {
       id: 11,
@@ -79,17 +79,17 @@ export const skills = {
     css: {
       id: 15,
       name: "CSS3",
-      value: 90,
+      value: 100,
     },
     materialUi: {
       id: 16,
       name: "Material UI",
-      value: 90,
+      value: 100,
     },
     greensock: {
       id: 17,
       name: "Greensock",
-      value: 75,
+      value: 70,
     },
   },
 };
