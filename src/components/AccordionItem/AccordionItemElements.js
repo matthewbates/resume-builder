@@ -19,12 +19,11 @@ export const AccordionItemBtn = styled.div`
   background: #3a8def;
   color: #ffffff;
   text-align: left;
-  font-weight: 700;
   align-items: center;
   padding: 1em;
   cursor: pointer;
   border: none;
-  font-family: "Open Sans";
+  font-family: "Raleway";
   transition: 0.25s ease-in-out;
 `;
 

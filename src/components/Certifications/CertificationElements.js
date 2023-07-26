@@ -25,15 +25,16 @@ export const CertificationItem = styled.div`
   }
 `;
 
-export const TitleWrapper = styled.div`
-  font-family: "Raleway";
-`;
+export const TitleWrapper = styled.div``;
 
 export const Title = styled.div`
+  font-family: "Raleway";
   font-weight: bold;
 `;
 
-export const TitlePlace = styled.div``;
+export const TitlePlace = styled.div`
+  font-family: "Open Sans";
+`;
 
 export const CertificationWrapper = styled.div`
   text-align: right;

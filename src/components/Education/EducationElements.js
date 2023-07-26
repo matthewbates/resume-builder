@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const EducationContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1em;
   background: #f5f5f5;
   width: calc(100vw - 20%);
   max-width: 816px;
@@ -11,7 +10,6 @@ export const EducationContainer = styled.div`
 
   @media screen and (max-width: 820px) {
     width: 100%;
-    flex-direction: column;
   }
 `;
 
@@ -30,12 +28,27 @@ export const NameWrapper = styled.div`
   font-family: "Raleway";
 
   @media screen and (max-width: 820px) {
+    font-size: 1em;
     width: 100%;
   }
 `;
 
+export const EducationSpan = styled.span`
+  display: flex;
+  font-family: "Raleway";
+`;
+
 export const EducationName = styled.div`
   font-weight: bold;
+`;
+
+export const EducationTitle = styled.div`
+  font-family: "Open Sans";
+
+  @media screen and (max-width: 820px) {
+    font-size: 12px;
+    width: 100%;
+  }
 `;
 
 export const LocationName = styled.div``;
@@ -54,8 +67,4 @@ export const TitleWrapper = styled.div`
 export const TitleDate = styled.div`
   display: flex;
   margin-bottom: 0.5em;
-`;
-
-export const TitleName = styled.div`
-  display: flex;
 `;

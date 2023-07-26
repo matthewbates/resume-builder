@@ -3,9 +3,11 @@ import {
   EducationContainer,
   EducationItem,
   NameWrapper,
+  EducationSpan,
   EducationName,
   LocationName,
   TitleWrapper,
+  EducationTitle,
   TitleDate,
   TitleName,
 } from "./EducationElements";
@@ -20,11 +22,11 @@ export default function Education() {
         {education.map(({ id, name, location, date, title, gpa }) => (
           <EducationItem key={id}>
             <NameWrapper>
-              <span style={{ display: "flex" }}>
+              <EducationSpan>
                 <EducationName>{name}</EducationName>
                 <LocationName>{location}</LocationName>
-              </span>
-              <div>{title}</div>
+              </EducationSpan>
+              <EducationTitle>{title}</EducationTitle>
             </NameWrapper>
             <TitleWrapper>
               <TitleDate>{date}</TitleDate>

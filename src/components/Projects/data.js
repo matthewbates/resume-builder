@@ -1,6 +1,24 @@
 export const projects = {
-  marsIndustries: {
+  persephoneGraes: {
     id: 1,
+    name: "Persephone Grae's Cafe & Juice Bar",
+    description:
+      "Restaurant website utilizing Google Maps/Business Profile API’s, React-Router and styled-components",
+    github: "https://github.com/matthewbates/persephone-graes",
+    link: "https://www.persephonegraescafe.com",
+    list: [
+      {
+        id: 1,
+        name: "Assembled a custom carousel to display recent restaurant reviews",
+      },
+      {
+        id: 2,
+        name: "Designed with an organized, thoughtful menu to be easily accessible on all viewports",
+      },
+    ],
+  },
+  marsIndustries: {
+    id: 2,
     name: "Mars Industries",
     description:
       "General contracting website with animations, intersection observers, React-Router, and custom form ",
@@ -18,24 +36,6 @@ export const projects = {
       {
         id: 3,
         name: "Optimized to render on all viewports using strategic CSS through conditionally-rendered styled-components",
-      },
-    ],
-  },
-  persephoneGraes: {
-    id: 2,
-    name: "Persephone Grae's Cafe & Juice Bar",
-    description:
-      "Restaurant website utilizing Google Maps/Business Profile API’s, React-Router and styled-components",
-    github: "https://github.com/matthewbates/persephone-graes",
-    link: "https://www.persephonegraescafe.com",
-    list: [
-      {
-        id: 1,
-        name: "Assembled a custom carousel to display recent restaurant reviews",
-      },
-      {
-        id: 2,
-        name: "Designed with an organized, thoughtful menu to be easily accessible on all viewports",
       },
     ],
   },
