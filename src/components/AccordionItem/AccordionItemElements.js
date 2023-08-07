@@ -8,23 +8,8 @@ export const AccordionItemContainer = styled.div`
   width: 100%;
 
   @media screen and (min-width: 820px) {
-    max-width: 60%;
+    max-width: 75%;
   }
-`;
-
-export const AccordionItemBtn = styled.div`
-  display: flex;
-  justify-content: space-between;
-  font-size: 1em;
-  background: #3a8def;
-  color: #ffffff;
-  text-align: left;
-  align-items: center;
-  padding: 1em;
-  cursor: pointer;
-  border: none;
-  font-family: "Raleway";
-  transition: 0.25s ease-in-out;
 `;
 
 export const AccordionItemWrapper = styled.div`

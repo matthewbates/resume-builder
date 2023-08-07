@@ -1,5 +1,6 @@
 import { useRef } from "react";
 
+import { FaPlus, FaMinus } from "react-icons/fa";
 import { LinearProgress } from "@mui/material";
 
 import {
@@ -10,6 +11,7 @@ import {
 } from "./AccordionItemElements";
 
 import { splitAndCapitalize } from "../utils/helpers";
+import Button from "../Button";
 
 export default function AccordionItem({
   title,
@@ -24,14 +26,12 @@ export default function AccordionItem({
 
   return (
     <AccordionItemContainer>
-      <AccordionItemBtn
-        onClick={() => toggle(index)}
-        activeIndex={activeIndex}
+      <Button
+        toggle={toggle}
         index={index}
-      >
-        {splitAndCapitalize(title)}
-        <span>{activeIndex === index ? "-" : "+"}</span>
-      </AccordionItemBtn>
+        activeIndex={activeIndex}
+        title={title}
+      />
       <AccordionItemWrapper
         ref={skillRef}
         style={
