@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 import { FaPlus, FaMinus } from "react-icons/fa";
-import { LinearProgress } from "@mui/material";
+import { LinearProgress, Typography, Box } from "@mui/material";
 
 import {
   AccordionItemContainer,
@@ -43,13 +43,18 @@ export default function AccordionItem({
         <AccordionItemContent>
           {sortedValues.map(({ id, name, value }) => (
             <div key={id}>
+            {/* <Box sx={{ display: "flex", alignItems: "center" }}> */}
               {name}
               <LinearProgress
                 variant="determinate"
                 value={value}
                 sx={{ height: 10 }}
               />
-            </div>
+              <Typography variant="subtitle2" color="textSecondary">
+                {value}%
+              </Typography>
+              </div>
+            // </Box>
           ))}
         </AccordionItemContent>
       </AccordionItemWrapper>
