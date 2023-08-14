@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const AccordionItemContainer = styled.div`
   cursor: pointer;
   display: flex;
-  margin: auto;
   flex-direction: column;
-  width: 100%;
+  margin: auto;
 
   @media screen and (min-width: 820px) {
     max-width: 75%;
@@ -13,20 +12,25 @@ export const AccordionItemContainer = styled.div`
 `;
 
 export const AccordionItemWrapper = styled.div`
-  height: 0;
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.3s ease;
 `;
 
 export const AccordionItemContent = styled.div`
   display: flex;
   flex-direction: column;
+  font-size: 0.9em;
   align-items: center;
 
   div {
     font-family: "Open Sans";
-    font-size: 0.9em;
-    width: 75%;
-    margin: 0.5em;
+    font-size: 1em;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 1em;
+    margin-bottom: 2px;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 `;

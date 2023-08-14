@@ -1,14 +1,14 @@
 import { useRef } from "react";
 
-import { FaPlus, FaMinus } from "react-icons/fa";
-import { LinearProgress, Typography, Box } from "@mui/material";
+import { LinearProgress, Typography } from "@mui/material";
 
 import {
   AccordionItemContainer,
-  AccordionItemBtn,
   AccordionItemWrapper,
   AccordionItemContent,
 } from "./AccordionItemElements";
+
+import LinearProgressWithLabel from "../LinearProgressWIthLabel";
 
 import { splitAndCapitalize } from "../utils/helpers";
 import Button from "../Button";
@@ -42,19 +42,10 @@ export default function AccordionItem({
       >
         <AccordionItemContent>
           {sortedValues.map(({ id, name, value }) => (
-            <div key={id}>
-            {/* <Box sx={{ display: "flex", alignItems: "center" }}> */}
-              {name}
-              <LinearProgress
-                variant="determinate"
-                value={value}
-                sx={{ height: 10 }}
-              />
-              <Typography variant="subtitle2" color="textSecondary">
-                {value}%
-              </Typography>
-              </div>
-            // </Box>
+            <>
+              <div style={{ fontWeight: "bold" }}>{name}</div>
+              <LinearProgressWithLabel key={id} name={name} value={value} />
+            </>
           ))}
         </AccordionItemContent>
       </AccordionItemWrapper>
