@@ -30,7 +30,7 @@ export const skills = {
     react: {
       id: 6,
       name: "React JS",
-      value: 100,
+      value: 95,
     },
     restApi: {
       id: 7,

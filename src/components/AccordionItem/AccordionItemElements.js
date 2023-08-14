@@ -17,20 +17,7 @@ export const AccordionItemWrapper = styled.div`
 `;
 
 export const AccordionItemContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  font-size: 0.9em;
-  align-items: center;
-
-  div {
-    font-family: "Open Sans";
-    font-size: 1em;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    gap: 1em;
-    margin-bottom: 2px;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
+  font-family: "Raleway";
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 `;

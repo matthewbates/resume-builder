@@ -40,14 +40,12 @@ export default function AccordionItem({
             : { height: "0px" }
         }
       >
-        <AccordionItemContent>
-          {sortedValues.map(({ id, name, value }) => (
-            <>
-              <div style={{ fontWeight: "bold" }}>{name}</div>
-              <LinearProgressWithLabel key={id} name={name} value={value} />
-            </>
-          ))}
-        </AccordionItemContent>
+        {sortedValues.map(({ id, name, value }) => (
+          <AccordionItemContent>
+            <div style={{ marginLeft: "2.5em" }}>{name}</div>
+            <LinearProgressWithLabel key={id} name={name} value={value} />
+          </AccordionItemContent>
+        ))}
       </AccordionItemWrapper>
     </AccordionItemContainer>
   );
